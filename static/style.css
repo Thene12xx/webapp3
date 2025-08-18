@@ -1,16 +1,17 @@
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    background-image: url("frst.jpeg");
+    background-size: cover;       /* make sure it fills the screen */
+    background-position: center;  /* keep it centered */
+    background-repeat: no-repeat; /* prevent tiling */
+    height: 100vh;                /* full viewport height */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;                 /* text stands out on dark forest */
+}
 
-  /* fallback light blue */
-  background-color: lightblue;
-
-  /* adjust size of frst.jpeg */
-  background-image: url("/static/frst.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-
-  /* Instead of cover (which stretches), try contain */
-  background-size: contain;
+.welcome-text {
+    font-size: 2.5em;
+    margin-top: 20px;
 }
