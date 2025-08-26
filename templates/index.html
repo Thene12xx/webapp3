@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+  <!-- First background with title + M-Pesa box -->
   <section class="bg bg1">
     <h1 class="welcome-text">Welcome to Usanii Wasanaa</h1>
 
@@ -23,8 +24,8 @@
     </div>
   </section>
 
+  <!-- Second background (no title here) -->
   <section class="bg bg2">
-    <!-- no title here -->
   </section>
 
   <script>
@@ -34,35 +35,7 @@
     alert("M-Pesa number copied: " + num);
   }
   </script>
-
-  <style>
-  .mpesa-box {
-    background: #f0f9f4;
-    border: 2px solid #1ba548;
-    padding: 20px;
-    border-radius: 12px;
-    font-family: Arial, sans-serif;
-    width: fit-content;
-    margin-top: 20px;
-  }
-  .mpesa-box h2 {
-    color: #1ba548;
-    margin-bottom: 10px;
-  }
-  .mpesa-box button {
-    margin-top: 10px;
-    background: #1ba548;
-    color: white;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  .mpesa-box button:hover {
-    background: #148c3d;
-  }
-  </style>
 </body>
 </html>
+
 
