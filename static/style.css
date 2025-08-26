@@ -1,3 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Shared background section styling */
+.bg {
+  height: 100vh;                  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;   
+  background-size: cover;
+  position: relative;             /* so children can be positioned inside */
+}
+
+/* First background image */
+.bg1 {
+  background-image: url("/static/frst.jpeg");
+}
+
+/* Second background image */
+.bg2 {
+  background-image: url("/static/irene.jpeg");
+}
+
+/* Title text only for first background */
+.bg1 .welcome-text {
+  position: absolute;              /* pin it */
+  top: 20px;                       /* space from top edge */
+  left: 50%;                       /* center horizontally */
+  transform: translateX(-50%);     /* adjust centering */
+  color: greenyellow;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  margin: 0;
+}
+
 /* M-Pesa payment box */
 .mpesa-box {
   background: #1ba548;        /* solid green background */
@@ -12,7 +50,7 @@
 }
 
 .mpesa-box h2 {
-  color: #ffffff;             /* white heading */
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
