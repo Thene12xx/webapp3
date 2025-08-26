@@ -1,17 +1,33 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url("frst.jpeg");
-    background-size: cover;       /* make sure it fills the screen */
-    background-position: center;  /* keep it centered */
-    background-repeat: no-repeat; /* prevent tiling */
-    height: 100vh;                /* full viewport height */
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color: white;                 /* text stands out on dark forest */
+/* M-Pesa payment box */
+.mpesa-box {
+  background: #1ba548;        /* solid green background */
+  border: 2px solid #148c3d;  /* darker green border */
+  padding: 20px;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  color: white;               /* text visible */
+  text-align: left;
+  max-width: 300px;
+  margin: 80px auto 0;        /* centers horizontally, pushes it down */
 }
 
-.welcome-text {
-    font-size: 2.5em;
-    margin-top: 20px;
+.mpesa-box h2 {
+  color: #ffffff;             /* white heading */
+  margin-bottom: 10px;
+}
+
+.mpesa-box button {
+  margin-top: 10px;
+  background: #ffffff;        /* white button */
+  color: #1ba548;             /* green text */
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.mpesa-box button:hover {
+  background: #f0f0f0;        /* lighter hover effect */
 }
