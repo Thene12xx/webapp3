@@ -10,12 +10,17 @@ body {
   background-position: center;
   background-attachment: fixed;   
   background-size: cover;
-  position: relative;             /* so children can be positioned inside */
+  position: relative; 
+  display: flex;
+  flex-direction: column;   /* stack children vertically */
+  align-items: center;      /* center horizontally */
 }
 
 /* First background image */
 .bg1 {
   background-image: url("/static/frst.jpeg");
+  justify-content: flex-start; /* keep content starting at top */
+  padding-top: 40px;           /* space from top */
 }
 
 /* Second background image */
@@ -25,15 +30,11 @@ body {
 
 /* Title text only for first background */
 .bg1 .welcome-text {
-  position: absolute;              /* pin it */
-  top: 20px;                       /* space from top edge */
-  left: 50%;                       /* center horizontally */
-  transform: translateX(-50%);     /* adjust centering */
   color: greenyellow;
   font-size: 2em;
   text-shadow: 2px 2px 5px black;
   text-align: center;
-  margin: 0;
+  margin-bottom: 30px;  /* space below the title */
 }
 
 /* M-Pesa payment box */
@@ -46,7 +47,6 @@ body {
   color: white;               /* text visible */
   text-align: left;
   max-width: 300px;
-  margin: 80px auto 0;        /* centers horizontally, pushes it down */
 }
 
 .mpesa-box h2 {
@@ -67,5 +67,5 @@ body {
 }
 
 .mpesa-box button:hover {
-  background: #f0f0f0;        /* lighter hover effect */
+  background: #f0f0f0;
 }
