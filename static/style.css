@@ -10,17 +10,16 @@ body {
   background-position: center;
   background-attachment: fixed;   
   background-size: cover;
-  position: relative; 
-  display: flex;
-  flex-direction: column;   /* stack children vertically */
-  align-items: center;      /* center horizontally */
+  position: relative;
 }
 
 /* First background image */
 .bg1 {
   background-image: url("/static/frst.jpeg");
-  justify-content: flex-start; /* keep content starting at top */
-  padding-top: 40px;           /* space from top */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers title */
+  padding-top: 40px;
 }
 
 /* Second background image */
@@ -34,12 +33,16 @@ body {
   font-size: 2em;
   text-shadow: 2px 2px 5px black;
   text-align: center;
-  margin-bottom: 30px;  /* space below the title */
+  margin-bottom: 20px;
 }
 
-/* M-Pesa payment box */
+/* M-Pesa payment box on the right side */
 .mpesa-box {
-  background: #1ba548;        /* solid green background */
+  position: absolute;    /* take it out of the flow */
+  top: 100px;            /* push it down from the top */
+  right: 40px;           /* push it away from the right edge */
+  
+  background: #1ba548;        /* green background */
   border: 2px solid #148c3d;  /* darker green border */
   padding: 20px;
   border-radius: 12px;
@@ -56,8 +59,8 @@ body {
 
 .mpesa-box button {
   margin-top: 10px;
-  background: #ffffff;        /* white button */
-  color: #1ba548;             /* green text */
+  background: #ffffff;
+  color: #1ba548;
   border: none;
   padding: 8px 14px;
   border-radius: 6px;
